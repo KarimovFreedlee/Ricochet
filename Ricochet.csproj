@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\CircleCreate.cs" />
     <Compile Include="Assets\Scripts\CubeCreate.cs" />
     <Compile Include="Assets\Scripts\CubeDestroy.cs" />
+    <Compile Include="Assets\Scripts\ExploudCube.cs" />
     <Compile Include="Assets\Scripts\FloorCube.cs" />
     <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\Moving.cs" />
