@@ -1,22 +1,34 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
 public class PauseMenu : MonoBehaviour {
+
     public GameObject panel;
-    public bool start;
-    private int sceneID;
-	// Update is called once per frame
+    
+    
+    public static int sceneID;
+    
+   
+	
 	void FixedUpdate () {
-		if(Input.GetKeyDown("escape"))
+        
+        if (Input.GetKeyDown("escape"))
         {
-            Time.timeScale = 0f;
-            panel.SetActive(true);
-            
+                Time.timeScale = 0f;
+                panel.SetActive(true); 
         }
-	}
-    private void Start()
+
+        // quick level dont forget to delet this
+        if (Input.GetKeyDown("q"))
+        {
+            GameOver.cubeCounter = 0;
+        }
+    }
+    private void Awake()
     {
+        
         sceneID = SceneManager.GetActiveScene().buildIndex;
     }
 
@@ -28,7 +40,7 @@ public class PauseMenu : MonoBehaviour {
     }
     public void OnRestartButton()
     {
-        SceneManager.LoadScene(sceneID);
+        SceneManager.LoadScene(1);
         
     }
     public void OnMainMenuButton()
@@ -46,4 +58,6 @@ public class PauseMenu : MonoBehaviour {
     {
         SceneManager.LoadScene(sceneID-1);
     }
+
+    
 }

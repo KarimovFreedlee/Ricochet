@@ -8,6 +8,7 @@ public class CubeDestroy : MonoBehaviour {
         if (collision.gameObject.tag == "ball")
         {
             GameOver.cubeCounter--;
+            GameOver.playerPoints += 10 * PauseMenu.sceneID;
             Destroy(gameObject);
         }
     }

@@ -5,15 +5,15 @@ using UnityEngine;
 public class CubeCreate : MonoBehaviour {
     public GameObject prefab1, prefab2, prefab3, prefab4;
     public int percent;
-    public float maxY;
-    public float minY;
+    //public float maxY;
+   // public float minY;
     public int minPer;
     
     // Use this for initialization
     private void Start()
     {
         
-        if (transform.position.y <= maxY && transform.position.y >= minY)
+        if (transform.position.y <= 5 && transform.position.y >= 2)
         {
             percent = Random.Range(minPer, 15);
             switch (percent)

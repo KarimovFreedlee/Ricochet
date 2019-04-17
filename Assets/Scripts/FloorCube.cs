@@ -8,6 +8,7 @@ public class FloorCube : MonoBehaviour {
     public SpriteRenderer color;
     public Color firstHealthColor;
     public Color secondHealthColor;
+
     public void Start()
     {
         Cubelife = 3;
