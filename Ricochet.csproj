@@ -85,10 +85,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Background.cs" />
     <Compile Include="Assets\Scripts\BallCreate.cs" />
     <Compile Include="Assets\Scripts\BallForce.cs" />
     <Compile Include="Assets\Scripts\CircleCreate.cs" />
-    <Compile Include="Assets\Scripts\CubeCreate.cs" />
     <Compile Include="Assets\Scripts\CubeDestroy.cs" />
     <Compile Include="Assets\Scripts\ExploudCube.cs" />
     <Compile Include="Assets\Scripts\FloorCube.cs" />
@@ -96,6 +96,7 @@
     <Compile Include="Assets\Scripts\Moving.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\PositionsList.cs" />
     <Compile Include="Assets\Scripts\SlowMo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

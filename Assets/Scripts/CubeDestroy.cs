@@ -10,6 +10,7 @@ public class CubeDestroy : MonoBehaviour {
             GameOver.cubeCounter--;
             GameOver.playerPoints += 10 * PauseMenu.sceneID;
             Destroy(gameObject);
+            Debug.Log(GameOver.cubeCounter);
         }
     }
 }

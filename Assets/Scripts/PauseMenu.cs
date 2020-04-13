@@ -40,7 +40,7 @@ public class PauseMenu : MonoBehaviour {
     }
     public void OnRestartButton()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(sceneID);
         
     }
     public void OnMainMenuButton()
